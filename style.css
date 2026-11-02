@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #26ebe7;
+    color: #13161a;
+    padding: 30px 15px;
+}
+
+.container {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #cde60d;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #98aab6;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #2d7cc5;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 25px;
+}
+
+legend {
+    color: #187779;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="color"]),
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b9c8d3;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #34495e;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #187779;
+    box-shadow: 0 0 4px rgba(94, 211, 213, 0.3);
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.options input {
+    margin: 0;
+}
+
+.options label {
+    display: inline;
+    margin: 0 5px 0 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #187779;
+    margin-bottom: 20px;
+}
+
+input[type="color"] {
+    width: 45px;
+    height: 30px;
+    border: none;
+    background: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    background-color: #187779;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #125c5e;
+}
+
+.reset {
+    background-color: #187779;
+}
+
+.reset:hover {
+    background-color: #78c3c5;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 18px;
+    }
+
+    .options {
+        gap: 5px;
+    }
+}
